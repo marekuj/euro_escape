@@ -1,0 +1,93 @@
+Euro Escape
+
+Plansza podzielona  jest na 125 pól
+
+Płytki terenu: 125 sztuk: 
+	Drewno: 	15 sztuk
+	Żelazo: 	15 sztuk
+	Żywność:	15 sztuk
+	Węgiel:		15 sztuk
+	Cegły:		15 sztuk
+	Złoto:		15 sztuk
+	Puste: 		35 sztuk
+	
+Żetony surowców: 600 sztuk: 
+	Drewno: 	100 sztuk
+	Żelazo: 	100 sztuk
+	Żywność:	100 sztuk
+	Węgiel:		100 sztuk
+	Cegły:		100 sztuk
+	Złoto:		100 sztuk
+	
+Pionki dla 6 graczy: 30 sztuk 
+	Gracz 1: 5 sztuk
+	Gracz 2: 5 sztuk
+	Gracz 3: 5 sztuk
+	Gracz 4: 5 sztuk
+	Gracz 5: 5 sztuk	
+	Gracz 6: 5 sztuk	
+	
+Budynki:
+	Tartak      -> pozwala na uzyskanie surowca 'Drewno' pod warunkiem że budynek stoi na  płytce terenu oznaczonej symbolem 'Drewno'.
+	Kopalnia    -> pozwala na uzyskanie surowca 'Węgiel' pod warunkiem że budynek stoi na odpowiedniej płytce terenu oznaczonej symbolem 'Węgiel'.
+	Odlewnia    -> pozwala na uzyskanie surowca 'Żelazo' pod warunkiem że budynek stoi na odpowiedniej płytce terenu oznaczonej symbolem 'Żelazo'.
+	Farma       -> pozwala na uzyskanie surowca 'Żywność' pod warunkiem że budynek stoi na odpowiedniej płytce terenu oznaczonej symbolem 'Cegły'.
+	Cegielnia   -> pozwala na uzyskanie surowca 'Cegły' pod warunkiem że budynek stoi na odpowiedniej płytce terenu oznaczonej symbolem 'Cegły'.
+	Osada       -> pozwala na uzyskanie surowca 'Złoto' pod warunkiem że budynek stoi na odpowiedniej płytce terenu bez żadnego oznaczenia.
+	
+	Stocznia    -> pozwala na budowę statku.
+	Market      -> pozwala na wymianę surowców po lepszych przelicznikach.
+	Koszary	    -> umożliwia rekrutację jednostek.
+
+
+Na skróty:  	
+	Należy pamiętać, że odległość miedzy osadami musi wynosić co najmniej 3 kafle.
+	Nowo dobrane kafle muszą być dostawione do już istniejących kafli na których umieszczeni są podwładni gracza -> TODO: może tak być?  
+	Celem gry jest wydostanie się z dziewiczego nieodkrytego lądu. Aby tego dokonać będzie trzeba zbudować statek.
+	
+Przygotowanie do gry:
+	Żetony surowców należy posortować na 6 odkrytych stosów. Tworzą one Bank surowców.
+	Należy przygotować aplikację -> TODO: 
+
+	Przygotowanie do gry zaczyna najmłodszy gracz. 
+	Każdy gracz wybiera sobie kolor i otrzymuje w tym kolorze:
+		Znaczniki podwładnych 
+		Znaczniki budynków
+
+	Następnie ustawia na obrzeżu planszy pustą płytkę terenu wraz z osadą. 
+	Losuje płytkę terenu i umieszcza ją na planszy w sąsiedztwie swojej osady, a następnie umieszcza na niej swojego podwładnego.
+	Dopiera żetony surowców -> TODO: trzeba ustalić ile i w jaki sposób!
+ 
+ Przebieg gry w krótkim zarysie:
+	Grę zaczyna najstarszy gracz. 
+	Podczas swojej kolejki, zachowując podaną kolejność, gracz wykonuje następujące czynności:
+		Musi wylosować odpowiedni kolor  by ustalić, które pola przynoszą zysk w tej kolejce. (W zależności od koloru, zyski mogą mieć wszyscy gracze). 
+		Może prowadzić handel 
+		Może:
+			Przemieszczać podwładnych
+			Stawiać budynki 
+			Odkrywać zakryte pola planszy
+			Szkolić podwładnych
+			Budować statek.
+
+
+Szczegółowy przebieg gry:
+
+Handel:
+	z innymi graczami -> gracz, w swojej kolejce, może wymieniać karty surowców ze wszystkimi graczami. Informuje wtedy graczy czego potrzebuje i co jest w stanie za to oddać, może również wysłuchać ofert innych i przedstawić swoje propozycje.
+	z bankiem         -> gracz zawsze może dokonać wymiany w stosunku 4:1, jeżeli posiada 'Market' w stosunku 3:1.
+	
+Przemieszczanie podwładnych:
+	TODO
+	
+Stawianie budynków:
+	TODO
+
+Odkrywanie planszy:
+	TODO
+
+Szkolenie podwładnych:
+	TODO
+
+Budowanie statku:
+	TODO
