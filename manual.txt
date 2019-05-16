@@ -1,0 +1,203 @@
+Euro Escape - wersja 0.2
+
+Plansza podzielona  jest na 125 pól
+
+Płytki terenu: 125 sztuk: 
+    Drewno:     15 sztuk
+    Żelazo:     15 sztuk
+    Żywność:    15 sztuk
+    Węgiel:     15 sztuk
+    Cegły:      15 sztuk
+    Złoto:      15 sztuk
+    Puste:      35 sztuk
+    
+Żetony surowców: 600 sztuk: 
+    Drewno:     100 sztuk
+    Żelazo:     100 sztuk
+    Żywność:    100 sztuk
+    Węgiel:     100 sztuk
+    Cegły:      100 sztuk
+    Złoto:      100 sztuk
+    
+Pionki dla 6 graczy: 30 sztuk 
+    Gracz 1: 5 sztuk
+    Gracz 2: 5 sztuk
+    Gracz 3: 5 sztuk
+    Gracz 4: 5 sztuk
+    Gracz 5: 5 sztuk    
+    Gracz 6: 5 sztuk    
+    
+Budynki:
+    Tartak      -> pozwala na uzyskanie surowca 'Drewno' pod warunkiem że budynek stoi na  płytce terenu oznaczonej symbolem 'Drewno'.
+    Kopalnia    -> pozwala na uzyskanie surowca 'Węgiel' pod warunkiem że budynek stoi na odpowiedniej płytce terenu oznaczonej symbolem 'Węgiel'.
+    Odlewnia    -> pozwala na uzyskanie surowca 'Żelazo' pod warunkiem że budynek stoi na odpowiedniej płytce terenu oznaczonej symbolem 'Żelazo'.
+    Farma       -> pozwala na uzyskanie surowca 'Żywność' pod warunkiem że budynek stoi na odpowiedniej płytce terenu oznaczonej symbolem 'Cegły'.
+    Cegielnia   -> pozwala na uzyskanie surowca 'Cegły' pod warunkiem że budynek stoi na odpowiedniej płytce terenu oznaczonej symbolem 'Cegły'.
+	Mennica 	-> pozwala na uzyskanie surowca 'Złoto' pod warunkiem że budynek stoi na odpowiedniej płytce terenu oznaczonej symbolem 'Złoto'.
+    Osada       -> pozwala na uzyskanie surowca 'Złoto' pod warunkiem że budynek stoi na odpowiedniej płytce terenu bez żadnego oznaczenia.
+    
+    Stocznia    -> pozwala na budowę statku. Można budować na płytce terenu bez żadnych odznaczeń, przy krawędzi mapy.
+    Market      -> pozwala na wymianę surowców po lepszych przelicznikach. Można budować na płytce terenu bez żadnych odznaczeń.
+    Koszary     -> umożliwia rekrutację jednostek. Można budować na płytce terenu bez żadnych odznaczeń.
+
+
+Zasady ogólne:      
+    Należy pamiętać, że odległość miedzy osadami musi wynosić co najmniej 3 kafle.
+	Wszystkie budynki, poza Osadą muszą się znajdować maksymalnie w promieniu 3 kafli od Osady. 
+    Nowo dobrane kafle muszą być dostawione do już istniejących kafli na których umieszczeni są podwładni gracza
+    Celem gry jest wydostanie się z dziewiczego nieodkrytego lądu. Aby tego dokonać będzie trzeba zbudować statek.
+    Na jednej płytce terenu może stać tylko jeden podwładny. 
+    
+Przygotowanie do gry:
+    Żetony surowców należy posortować na 6 odkrytych stosów. Tworzą one Bank surowców.
+    Należy przygotować aplikację -> TODO
+
+    Przygotowanie do gry zaczyna najmłodszy gracz. 
+    Każdy gracz wybiera sobie kolor i otrzymuje w tym kolorze:
+        Znaczniki podwładnych 
+        Znaczniki budynków
+
+    Następnie ustawia na obrzeżu planszy pustą płytkę terenu wraz z osadą. 
+    Losuje płytkę terenu i umieszcza ją na planszy w sąsiedztwie swojej osady, a następnie umieszcza na niej swojego podwładnego.
+    Dopiera żetony surowców -> TODO: trzeba ustalić ile i w jaki sposób!
+ 
+ Przebieg gry w krótkim zarysie:
+    Grę zaczyna najstarszy gracz. 
+    Podczas swojej kolejki, zachowując podaną kolejność, gracz wykonuje następujące czynności:
+        Musi wylosować odpowiedni kolor  by ustalić, które pola przynoszą zysk w tej kolejce. (W zależności od koloru, zyski mogą mieć wszyscy gracze). 
+        Może prowadzić handel 
+        Może przemieszczać podwładnych
+        Może:
+            Stawiać budynki 
+            Odkrywać zakryte pola planszy
+            Szkolić podwładnych
+            Wybudować statek.
+
+
+Szczegółowy przebieg gry:
+
+Handel:
+    z innymi graczami -> gracz, w swojej kolejce, może wymieniać karty surowców ze wszystkimi graczami. Informuje wtedy graczy czego potrzebuje i co jest w stanie za to oddać, może również wysłuchać ofert innych i przedstawić swoje propozycje.
+    z bankiem         -> gracz zawsze może dokonać wymiany w stosunku 4:1, jeżeli posiada 'Market' w stosunku 3:1.
+    
+Przemieszczanie podwładnych:
+	Gracz może przemieszczać wszystkich podwładnych ustawionych na planszy.
+	Koszt przesunięcia podwładnego:
+		Żywność:    1 sztuk
+    
+Stawianie budynków:
+    Każdy typ budynku można stawiać na odpowiednim typie kafelka terenu(Patrz powyżej).
+    Na kafelku na którym stawiamy budynek musi znajdować się podwładny.
+    Budynki: Tartak, Kopalnia, Odlewnia, Farma, Cegielnia stawiamy w rogach odpowiednio kafelka.
+	Budynki: Osada, Stocznia, Market, Koszary stawiamy na środku pustego kafelka.
+	Kafelek z oznaczeniem surowca generuje dochód tylko jeżeli spełnione są wszystkie poniższe warunki:
+		Na kafelku postawiony jest odpowiedni budynek.
+		Kolor wylosowany w rundzie jest taki sam na którym stoi budynek.
+		Zyski z kafelka trafiają do właściciela budynku.
+
+	Należy pamiętać, że każda Osada co rundę generuję 1 sztukę Złota bez względu na wylosowany kolor!	
+	Koszty budowy:
+        Tartak:
+            Żelazo:     1 sztuk
+            Węgiel:     1 sztuk
+            Cegły:      3 sztuk
+            Złoto:      5 sztuk
+        
+        Kopalnia:
+            Drewno:     2 sztuk
+            Żelazo:     2 sztuk
+            Cegły:      1 sztuk
+            Złoto:      5 sztuk
+        
+        Odlewnia:
+            Drewno:     1 sztuk
+            Żywność:    1 sztuk
+            Węgiel:     2 sztuk
+            Cegły:      1 sztuk
+            Złoto:      5 sztuk
+        
+        Farma:
+            Drewno:     1 sztuk
+            Żelazo:     1 sztuk
+            Żywność:    3 sztuk
+            Złoto:      5 sztuk
+        
+        Cegielnia:
+            Drewno:     1 sztuk
+            Żelazo:     1 sztuk
+            Węgiel:     3 sztuk
+            Złoto:      5 sztuk
+        
+        Mennica:
+            Drewno:     1 sztuk
+            Żelazo:     1 sztuk
+            Węgiel:     1 sztuk
+            Cegły:      2 sztuk
+            Złoto:      5 sztuk
+			
+        Osada:  
+            Drewno:     10 sztuk
+            Żelazo:     10 sztuk
+            Żywność:    10 sztuk
+            Węgiel:     10 sztuk
+            Cegły:      10 sztuk
+            Złoto:      10 sztuk
+        
+        Stocznia:
+            Drewno:     4 sztuk
+            Żelazo:     4 sztuk
+            Węgiel:     4 sztuk
+            Cegły:      4 sztuk
+            Złoto:     10 sztuk
+        
+        Market:
+            Drewno:     4 sztuk
+            Żelazo:     4 sztuk
+            Węgiel:     4 sztuk
+            Cegły:      4 sztuk
+            Złoto:     10 sztuk
+        
+        Koszary:
+            Drewno:     5 sztuk
+            Żelazo:     5 sztuk
+            Cegły:      5 sztuk
+            Złoto:     10 sztuk
+        
+    
+
+Odkrywanie planszy:
+    Aby dostawić kafel terenu gracz musi:
+        Opłacić zwiadowców, koszt: 
+            Żywność:    1 sztuka
+            Drewno:     1 sztuk
+            Węgiel:     1 sztuk
+        
+        Wykonać 'Losowe Zadanie Akcji' -> TODO: aplikacja 
+     
+    Nowo dobrane kafel terenu musi być dostawione do już istniejących kafli na których umieszczeni są podwładni gracza
+
+Szkolenie podwładnych:
+    Wyszkolenie podwładnego kosztuję:
+        Żelazo:     1 sztuk
+        Żywność:    2 sztuk
+        Złoto:      2 sztuk
+    
+    Aby szkolić podwładnych należy posiadać budynek 'Koszary'.
+    Na każdą posiadaną przez gracza osadę może przypadać najwyżej dwoje podwładnych.
+    Podwładnego należy umieścić na płytce terenu na której znajdują się koszary.
+
+Budowanie statku:
+    Aby wybudować statek gracz musi spełniać warunki:
+        Posiadać budynek: 
+            Stocznia
+        Posiadać surowce: 
+            Drewno:     20 sztuk
+            Żelazo:     20 sztuk
+            Żywność:    20 sztuk
+            Węgiel:     20 sztuk
+            Cegły:      20 sztuk
+            Złoto:      20 sztuk
+        Posiada załogę:
+            5 podwładnych
+
+    Wybudowanie statku automatycznie kończy grę. Gracz z ukończonym statkiem wygrywa!Euro Escape
