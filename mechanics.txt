@@ -1,0 +1,24 @@
+
+1 Worker placement
+Mechanika oparta na wyborze jednej akcji spośród kilku dostępnych. Przeważnie wybór zaznacza się położeniem jakiegoś znacznika (żetonu, kostki, figurki, dysku) na pewnym obszarze planszy przypisanym tej konkretnej akcji. Niekiedy wybór danej akcji blokuje taką możliwość innym graczom.
+
+
+2 Tile placement
+Polega na wykładaniu kafelków, jej najbardziej znanym przykładem jest gra Carcassonne. Od ułożenia kafelków zależy, ile punktów dostarczą.
+
+
+3 Area Control / Area Influence
+Mechanika nagradzająca gracza posiadającego przewagę na kontrolowanym obszarze.
+
+4 Trading
+W grze z mechaniką handlu gracze mogą wymieniać między sobą przedmioty.
+
+5 Modular Board
+Rozgrywka prowadzona jest na modułowej planszy, składającej się z wielu elementów (zazwyczaj kafelków lub kart), których różnorodne rozmieszczenie warunkuje możliwości eksploracji i wymusza stosowanie odmiennych strategii.
+
+6 Grid Movement 
+Elementy gry (np. pionki) przemieszczane są w wielu kierunkach, na planszy pokrytej siatką pól (zazwyczaj kwadratowych lub sześciokątnych).
+
+Źródła:
+	https://www.urania.edu.pl/gry/planszowe/mechaniki.html
+	http://www.swiatgierplanszowych.pl/mechaniki.html 
