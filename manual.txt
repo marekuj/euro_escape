@@ -50,7 +50,11 @@ Zasady ogólne:
     
 Przygotowanie do gry:
     Żetony surowców należy posortować na 6 odkrytych stosów. Tworzą one Bank surowców.
-    Należy przygotować aplikację -> TODO
+    Należy pobrać aplikację na urządzenie mobilne z systemem operacyjnym Android:
+		http://euroescape.pl/euro-escape.apk
+		http://euroescape.k0.d2.pl/euro-escape.apk (mirror)
+	Do rozegrania gry wystarczy jedna aplikacja Euro-Escape dla wszystkich graczy.
+	Jednak dla wygody każdy gracz może uruchomić aplikację Euro-Escape na swoim urządzeniu mobilnym.
 
     Przygotowanie do gry zaczyna najmłodszy gracz. 
     Każdy gracz wybiera sobie kolor i otrzymuje w tym kolorze:
@@ -59,12 +63,12 @@ Przygotowanie do gry:
 
     Następnie ustawia na obrzeżu planszy pustą płytkę terenu wraz z osadą. 
     Losuje płytkę terenu i umieszcza ją na planszy w sąsiedztwie swojej osady, a następnie umieszcza na niej swojego podwładnego.
-    Dopiera żetony surowców -> TODO: trzeba ustalić ile i w jaki sposób!
+    Dobiera 12 dowolnych pojedynczych żetonów surowców.
  
  Przebieg gry w krótkim zarysie:
     Grę zaczyna najstarszy gracz. 
     Podczas swojej kolejki, zachowując podaną kolejność, gracz wykonuje następujące czynności:
-        Musi wylosować odpowiedni kolor  by ustalić, które pola przynoszą zysk w tej kolejce. (W zależności od koloru, zyski mogą mieć wszyscy gracze). 
+        Musi wylosować odpowiedni kolor oraz symbol budynku używając do tego pobranej aplikacji by ustalić, które pola przynoszą zysk w tej kolejce. (W zależności od koloru, zyski mogą mieć wszyscy gracze). 
         Może prowadzić handel 
         Może przemieszczać podwładnych
         Może:
@@ -75,6 +79,11 @@ Przygotowanie do gry:
 
 
 Szczegółowy przebieg gry:
+
+Gracz w swojej turze najpierw używa aplikacji w celu wylosowania koloru oraz symbolu budynku przynoszącego w tej turze zyski.
+Następnie zgodnie z tym co zostało wylosowane wszyscy gracze dobierają surowce zgodnie z następującymi zastadami:
+	Wszystkie budynki znajdujące się na planszy na polach o wylosowanym kolorze generują 1 sztukę surowca.
+	Wszystkie budynki znajdujące się na planszy na polach o wylosowanym kolorze oraz wylosowanym symbolu generują dodatkowo 2 sztuki surowca.
 
 Handel:
     z innymi graczami -> gracz, w swojej kolejce, może wymieniać karty surowców ze wszystkimi graczami. Informuje wtedy graczy czego potrzebuje i co jest w stanie za to oddać, może również wysłuchać ofert innych i przedstawić swoje propozycje.
@@ -87,12 +96,15 @@ Przemieszczanie podwładnych:
     
 Stawianie budynków:
     Każdy typ budynku można stawiać na odpowiednim typie kafelka terenu(Patrz powyżej).
-    Na kafelku na którym stawiamy budynek musi znajdować się podwładny.
+    Na kafelku, na którym stawiamy budynek musi znajdować się podwładny.
+	Wybudowanie budynku oznaczane na planszy jest kamykiem w kolorze gracza. Kamyk należy postawić na jednym z trzech kolorów kafelka.
+	Od tej pory budynek będzie generował surowce, jeżeli aplikacja wylosuje symbol budynku w kolojrze na jakim został ustawiony kamyk.
+	
     Budynki: Tartak, Kopalnia, Odlewnia, Farma, Cegielnia stawiamy w rogach odpowiednio kafelka.
 	Budynki: Osada, Stocznia, Market, Koszary stawiamy na środku pustego kafelka.
 	Kafelek z oznaczeniem surowca generuje dochód tylko jeżeli spełnione są wszystkie poniższe warunki:
 		Na kafelku postawiony jest odpowiedni budynek.
-		Kolor wylosowany w rundzie jest taki sam na którym stoi budynek.
+		Kolor wylosowany w rundzie jest taki sam, na którym stoi budynek.
 		Zyski z kafelka trafiają do właściciela budynku.
 
 	Należy pamiętać, że każda Osada co rundę generuję 1 sztukę Złota bez względu na wylosowany kolor!	
@@ -101,20 +113,20 @@ Stawianie budynków:
             Żelazo:     1 sztuk
             Węgiel:     1 sztuk
             Cegły:      3 sztuk
-            Złoto:      5 sztuk
+            Złoto:      2 sztuk
         
         Kopalnia:
             Drewno:     2 sztuk
             Żelazo:     2 sztuk
             Cegły:      1 sztuk
-            Złoto:      5 sztuk
+            Złoto:      2 sztuk
         
         Odlewnia:
             Drewno:     1 sztuk
             Żywność:    1 sztuk
             Węgiel:     2 sztuk
             Cegły:      1 sztuk
-            Złoto:      5 sztuk
+            Złoto:      3 sztuk
         
         Farma:
             Drewno:     1 sztuk
@@ -126,7 +138,7 @@ Stawianie budynków:
             Drewno:     1 sztuk
             Żelazo:     1 sztuk
             Węgiel:     3 sztuk
-            Złoto:      5 sztuk
+            Złoto:      2 sztuk
         
         Mennica:
             Drewno:     1 sztuk
@@ -136,32 +148,32 @@ Stawianie budynków:
             Złoto:      5 sztuk
 			
         Osada:  
-            Drewno:     10 sztuk
-            Żelazo:     10 sztuk
-            Żywność:    10 sztuk
-            Węgiel:     10 sztuk
-            Cegły:      10 sztuk
-            Złoto:      10 sztuk
+            Drewno:     9 sztuk
+            Żelazo:     9 sztuk
+            Żywność:    9 sztuk
+            Węgiel:     9 sztuk
+            Cegły:      9 sztuk
+            Złoto:      9 sztuk
         
         Stocznia:
             Drewno:     4 sztuk
             Żelazo:     4 sztuk
             Węgiel:     4 sztuk
             Cegły:      4 sztuk
-            Złoto:     10 sztuk
+            Złoto:      9 sztuk
         
         Market:
             Drewno:     4 sztuk
             Żelazo:     4 sztuk
             Węgiel:     4 sztuk
             Cegły:      4 sztuk
-            Złoto:     10 sztuk
+            Złoto:      9 sztuk
         
         Koszary:
             Drewno:     5 sztuk
             Żelazo:     5 sztuk
             Cegły:      5 sztuk
-            Złoto:     10 sztuk
+            Złoto:      9 sztuk
         
     
 
@@ -171,10 +183,8 @@ Odkrywanie planszy:
             Żywność:    1 sztuka
             Drewno:     1 sztuk
             Węgiel:     1 sztuk
-        
-        Wykonać 'Losowe Zadanie Akcji' -> TODO: aplikacja 
      
-    Nowo dobrane kafel terenu musi być dostawione do już istniejących kafli na których umieszczeni są podwładni gracza
+    Nowo dobrany kafel terenu musi być dostawiony do już istniejących kafli na których umieszczeni są podwładni gracza
 
 Szkolenie podwładnych:
     Wyszkolenie podwładnego kosztuję:

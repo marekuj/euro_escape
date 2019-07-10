@@ -6,14 +6,13 @@ import {
   ScrollView,
   StyleSheet,
   Text,
-  TouchableOpacity,
   View,
   Easing,
   Animated,
 } from 'react-native';
 import AwesomeButton from 'react-native-really-awesome-button/src/themes/bruce';
 
-import { MonoText } from '../components/StyledText';
+import { Legend } from '../components/Legend';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -68,7 +67,7 @@ export default class HomeScreen extends React.Component {
     let animatedValue = new Animated.Value(0);
     let lastValue = 0;
     let sum = 0;
-    let log = "";
+
     animatedValue.addListener((event) => {
       let delta = event.value - lastValue;
       lastValue = event.value;
@@ -77,7 +76,6 @@ export default class HomeScreen extends React.Component {
         sum = 0;
         this.setState(this.state);
       }
-      log += event.value + "\n";
     });
 
     Animated.timing(animatedValue, {
@@ -87,35 +85,36 @@ export default class HomeScreen extends React.Component {
     }).start(() => {
       next();
       this.buttonPressed(false);
-      console.log(log);
     });
   }
 
   render() {
     return (
         <ImageBackground source={require('../assets/images/bg.jpg')} style={{with: '100%', height: '100%'}}>
-        <View style={styles.container}>
-          <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-            <View style={styles.welcomeContainer}>
-              <Image
-                  source={require('../assets/images/euro-escape.png')}
-                  style={styles.welcomeImage}
-              />
+          <View style={styles.container}>
+            <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
+              <View style={styles.appContainer}>
+                <Image
+                    source={require('../assets/images/euro-escape.png')}
+                    style={styles.welcomeImage}
+                />
 
-              <View style={styles.drawButtonContainer}>
-                <AwesomeButton type='secondary' disabled={this.state.buttonPressed} progress progressLoadingTime={1500} onPress={next => this.draw(next)}>
-                  <Text style={styles.drawButtonText}>LOSUJ</Text>
-                </AwesomeButton>
-              </View>
+                <View style={styles.drawButtonContainer}>
+                  <AwesomeButton type='secondary' disabled={this.state.buttonPressed} progress progressLoadingTime={1500} onPress={next => this.draw(next)}>
+                    <Text style={styles.drawButtonText}>LOSUJ</Text>
+                  </AwesomeButton>
+                </View>
 
-              <View style={styles.drewResourceContainer}>
-                <View style={[styles.drewResource, {backgroundColor: HomeScreen.randomElement(HomeScreen.colors)}]}>
-                  <Image source={HomeScreen.randomElement(HomeScreen.resources)}/>
+                <View style={styles.drewResourceContainer}>
+                  <View style={[styles.drewResource, {backgroundColor: HomeScreen.randomElement(HomeScreen.colors)}]}>
+                    <Image style={styles.drewResourceImage} source={HomeScreen.randomElement(HomeScreen.resources)}/>
+                  </View>
                 </View>
               </View>
-            </View>
-          </ScrollView>
-        </View>
+              <Legend />
+            </ScrollView>
+
+          </View>
         </ImageBackground>
     );
   }
@@ -125,27 +124,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  developmentModeText: {
-    marginBottom: 20,
-    color: 'rgba(0,0,0,0.4)',
-    fontSize: 14,
-    lineHeight: 19,
-    textAlign: 'center',
-  },
   contentContainer: {
     paddingTop: 30,
   },
-  welcomeContainer: {
+  appContainer: {
     alignItems: 'center',
     marginTop: 10,
-    marginBottom: 20,
+    marginBottom: 10,
   },
   welcomeImage: {
-    width: 200,
-    height: 200,
+    width: 130,
+    height: 130,
     resizeMode: 'contain',
     marginTop: 3,
-    marginLeft: -10,
   },
   tabBarInfoContainer: {
     position: 'absolute',
@@ -167,24 +158,24 @@ const styles = StyleSheet.create({
     backgroundColor: '#fbfbfb',
     paddingVertical: 20,
   },
-  helpContainer: {
-    marginTop: 15,
-    alignItems: 'center',
-  },
   drawButtonContainer: {
-    marginTop: 40,
   },
   drawButtonText: {
     padding: 75,
     fontSize: 20
   },
   drewResourceContainer: {
-    marginTop: 80,
+    marginTop: 20,
   },
   drewResource: {
     borderRadius: 10,
     borderStyle: 'solid',
     borderWidth: 3,
     borderColor: '#000',
+  },
+  drewResourceImage: {
+    width: 126,
+    height: 128,
+    resizeMode: 'contain',
   },
 });
